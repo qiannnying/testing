@@ -122,11 +122,13 @@
         // To lower canvas resolution on mobile devices to gain some
         // performance, uncomment the following line:
         //config.devicePixelRatio = 1;
-        container.width = window.innerWidth*90/100 + 'px';
+        container.className.width = window.innerWidth*90/100 + 'px';
+        
         unityShowBanner('WebGL builds are not supported on mobile devices.');
       }else{
-        container.width = "1280px";
-        container.height = "720px";
+        container.className = "unity-desktop";
+        container.className = "1280px";
+        container.className = "720px";
       }
       
       loadingBar.style.display = "block";
@@ -162,7 +164,7 @@
                   //alert('landscape');
                   break; 
                 default:
-                  canvas.style.width = window.innerWidth*90/100 + 'px';
+                  container.className = window.innerWidth*90/100 + 'px';
                   //alert('portrait');
                   break; 
               }
