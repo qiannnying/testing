@@ -122,8 +122,11 @@
         // To lower canvas resolution on mobile devices to gain some
         // performance, uncomment the following line:
         //config.devicePixelRatio = 1;
-        canvas.style.width = window.innerWidth*90/100 + 'px';
+        container.width = window.innerWidth*90/100 + 'px';
         unityShowBanner('WebGL builds are not supported on mobile devices.');
+      }else{
+        container.width = "1280px";
+        container.height = "720px";
       }
       
       loadingBar.style.display = "block";
