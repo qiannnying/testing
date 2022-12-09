@@ -127,8 +127,9 @@
         unityShowBanner('WebGL builds are not supported on mobile devices.');
       }else{
         container.className = "unity-desktop";
-        container.width = "1280px";
-        container.height = "720px";
+        
+        container.className.width = "1280px";
+        container.className.height = "720px";
       }
       
       loadingBar.style.display = "block";
