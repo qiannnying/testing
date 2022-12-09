@@ -12,15 +12,15 @@ body {
 #unity-container {
 	padding:0px;
 	position:absolute;
-	height:100vh;
-	width:100vw;
+	height:auto;
+	width:100%;
 	background-color:#121214;
 	
 }
 
 #unity-container.unity-desktop {
 	position:absolute;
-	height:auto;
+	height:100%;
 	width:100%;
 	left: 50%; top: 50%; transform: translate(-50%, -50%)
 }
