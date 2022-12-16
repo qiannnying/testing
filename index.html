@@ -6,29 +6,10 @@
     <title>Christmas</title>
     <link rel="shortcut icon" href="TemplateData/favicon.ico">
     <link rel="stylesheet" href="TemplateData/style.css">
-    <style>
-      #unity-container {
-          position: unset;
-          
-      }
-      #unity-container.unity-desktop {
-          position: unset;
-          transform: unset;
-      }
-      #unity-container.unity-mobile {
-        position: unset;
-        transform: unset; 
-        aspect-ratio: 16/9;
-      }
-      #unity-canvas {
-        position: unset;
-        transform: unset; 
-       
-      }
-    </style>
+    
   </head>
   <body>
-    <div id="item-container" class="item">
+    
       <div id="unity-container" class="unity-desktop">
         <button id="unity-fullscreen-button" onclick="toggleFullscreen()"></button>
         <canvas id="unity-canvas"></canvas>
@@ -39,7 +20,7 @@
         </div>
         <div id="unity-warning"> </div>
       </div>
-    </div>
+    
     <script>
       var container = document.querySelector("#unity-container");
       var canvas = document.querySelector("#unity-canvas");
